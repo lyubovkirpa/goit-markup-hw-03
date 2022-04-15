@@ -1,0 +1,366 @@
+:root {
+  --main-text-color: #757575;
+  --title-text-color: #212121;
+  --main-bgd-color: #fff;
+  --bgd-color: #2196f3;
+  --secondary-color: #f5f4fa;
+  --accent-color: #2f303a;
+  --frame-color: #188ce8;
+  --footer-color: rgba(255, 255, 255, 0.6);
+  --typical-margin: 94px;
+}
+
+body {
+  font-family: Roboto, sans-serif;
+  letter-spacing: 0.03em;
+  color: var(--main-text-color);
+  background-color: var(--main-bgd-color);
+  font-size: 14px;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding-left: 0;
+}
+
+img {
+  display: block;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+/* portfolio header */
+.container.portfolio {
+  padding-top: var(--typical-margin);
+  padding-bottom: var(--typical-margin);
+}
+
+/* logo */
+.logo {
+  font-family: Raleway;
+  color: var(--bgd-color);
+  font-size: 26px;
+  line-height: 1.2;
+}
+
+.logo span {
+  color: var(--title-text-color);
+}
+
+/* nav */
+.mean-nav {
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid #ececec;
+}
+
+.header-nav {
+  display: flex;
+  margin-top: 24px;
+  margin-bottom: 25px;
+}
+
+.site-item {
+  display: flex;
+  margin-left: 93px;
+  align-items: center;
+}
+
+.site-item .item + .item {
+  margin-left: 50px;
+}
+
+.site-item .link {
+  color: var(--title-text-color);
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  text-decoration: none;
+
+  padding-top: 5px;
+  padding-bottom: 5px;
+  display: block;
+}
+
+.site-item .link:hover,
+.site-item .link:focus {
+  color: var(--bgd-color);
+}
+
+.header-contact {
+  display: flex;
+  margin-left: auto;
+}
+
+.header-contact .item + .item {
+  margin-left: 50px;
+}
+
+.header-contact .link {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  color: var(--main-text-color);
+  text-decoration: none;
+}
+.contact .link:hover {
+  color: var(--bgd-color);
+}
+
+.link.current {
+  color: var(--bgd-color);
+}
+
+/* Hero */
+.hero {
+  background-color: var(--accent-color);
+  text-align: center;
+  padding: 200px 0;
+}
+
+.hero-title {
+  color: var(--main-bgd-color);
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.4;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+
+  margin-bottom: 30px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 696px;
+}
+
+/* button */
+.button-button {
+  cursor: pointer;
+  color: var(--main-bgd-color);
+  background-color: var(--bgd-color);
+  font-family: inherit;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.9;
+  letter-spacing: 0.06em;
+  display: flex;
+  align-items: center;
+
+  display: inline-block;
+  padding: 10px 32x;
+  border-radius: 4px;
+  border: 1px solid transparent;
+}
+
+.button-button:hover,
+.button-button:focus {
+  background-color: var(--frame-color);
+}
+
+.button-primary {
+  cursor: pointer;
+  color: var(--title-text-color);
+  background-color: var(--secondary-color);
+  border: transparent;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.6;
+  letter-spacing: 0.03em;
+
+  border-radius: 4px;
+  border: 1px solid transparent;
+  padding: 6px 22px;
+}
+
+.button-primary:hover,
+.button-primary:focus {
+  color: var(--main-bgd-color);
+  background-color: var(--bgd-color);
+}
+
+.hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+/*  portfolio button */
+.list-button {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 16px;
+}
+
+.list-button .item + .item {
+  margin-left: 8px;
+}
+
+.container {
+  width: 1200px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+/* features */
+
+.features-list {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.features {
+  padding-top: var(--typical-margin);
+  padding-bottom: var(--typical-margin);
+}
+
+.features-title {
+  color: var(--title-text-color);
+  font-weight: 700;
+  line-height: 1.2;
+  font-size: 14px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+
+.features-title-text {
+  line-height: 1.7;
+  max-width: 270px;
+}
+
+.gallery {
+  display: flex;
+  justify-content: space-between;
+}
+
+/* section */
+.section-title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.2;
+  color: var(--title-text-color);
+  margin-bottom: 50px;
+  text-align: center;
+}
+
+.section {
+  background-color: var(--secondary-color);
+  padding-top: var(--typical-margin);
+  padding-bottom: var(--typical-margin);
+}
+
+.master-img {
+  margin-bottom: 30px;
+}
+
+/* portfolio section */
+.gallery-list:nth-child(3n) {
+  margin-right: 0;
+}
+
+.gallery-list {
+  display: flex;
+  flex-wrap: wrap;
+  flex-basis: calc((100% - 90px) / 3);
+  margin-right: 30px;
+}
+
+.container-title {
+  padding: 20px 24px;
+  border: 1px solid #eeeeee;
+  box-sizing: border-box;
+}
+
+.gallery-list .item {
+  padding-bottom: 20px;
+}
+
+/* work */
+.work-title {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.2;
+  color: var(--title-text-color);
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.work-title-profession {
+  font-size: 16px;
+  line-height: 1.2;
+  text-align: center;
+}
+
+/*  adress  */
+.contact-adress {
+  color: var(--secondary-color);
+  font-style: normal;
+  font-size: 14px;
+  line-height: 1.7;
+  letter-spacing: 0.03em;
+}
+
+.form {
+  background-color: var(--accent-color);
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+.footer-logo {
+  margin-bottom: 20px;
+}
+
+.form span {
+  color: var(--secondary-color);
+}
+
+/* Портфолио */
+.title {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+  color: var(--title-text-color);
+  margin-bottom: 8px;
+}
+
+.text {
+  font-size: 16px;
+  line-height: 1.88;
+}
+
+.contact .link-footer {
+  font-family: "Roboto";
+  font-style: normal;
+  font-size: 14px;
+  line-height: 1.7;
+  letter-spacing: 0.03em;
+  color: var(--footer-color);
+  text-decoration: none;
+}
+.contact .link-footer:hover {
+  color: var(--bgd-color);
+}
+
+.contact .item:not(:last-child) {
+  margin-bottom: 9px;
+}
