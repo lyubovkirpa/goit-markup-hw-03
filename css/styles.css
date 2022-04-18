@@ -54,7 +54,8 @@ header {
   padding-bottom: 25px;
 }
 
-.logo span {
+.logo span,
+.footer-logo span {
   color: var(--title-text-color);
 }
 
@@ -99,8 +100,6 @@ header {
 .header-contact {
   display: flex;
   margin-left: auto;
-  padding-top: 32px;
-  padding-bottom: 32px;
 }
 
 .header-contact .item + .item {
@@ -119,6 +118,10 @@ header {
 }
 .contact.link:hover {
   color: var(--bgd-color);
+}
+.contact.link {
+  padding-top: 32px;
+  padding-bottom: 32px;
 }
 
 .link.current {
@@ -252,6 +255,10 @@ header {
   max-width: 270px;
 }
 
+.section.class {
+  padding-top: 0;
+}
+
 .gallery {
   display: flex;
   justify-content: space-between;
@@ -333,6 +340,10 @@ header {
 }
 
 .footer-logo {
+  font-family: Raleway;
+  color: var(--bgd-color);
+  font-size: 26px;
+  line-height: 1.2;
   margin-bottom: 20px;
 }
 
@@ -347,7 +358,7 @@ header {
   line-height: 2;
   letter-spacing: 0.06em;
   color: var(--title-text-color);
-  margin-bottom: 8px;
+  margin-bottom: 4px;
 }
 
 .text {
