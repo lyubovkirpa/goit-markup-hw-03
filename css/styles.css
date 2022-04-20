@@ -236,7 +236,6 @@ header {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  margin-bottom: var(--typical-padding);
 }
 
 .features-title {
